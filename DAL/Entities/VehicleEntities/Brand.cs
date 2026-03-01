@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL.Entities.VehicleEntities
+{
+    public class Brand : Entity
+    {
+        public string Name { get; set; }
+
+        public ICollection<Model> Models { get; set; }
+    }
+}
